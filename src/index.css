@@ -1,0 +1,42 @@
+header{
+  margin-left: 40px;
+  margin-top: -40px;
+}
+nav{
+  position: fixed;
+  top: 5%;
+  right: 5%;
+  padding: 10px;
+}
+nav a{
+  text-decoration: none;
+  color: #333; 
+  padding: 20px;
+  display: inline-block;
+
+}
+nav a .icon{
+  vertical-align: middle;
+  
+}
+nav a:hover{
+  background-color: aqua;
+}
+main img{
+  position: absolute;
+  top: 50%;
+  left: 30%;
+  transform: translate(-50%, -30%);
+
+}
+.dia{
+  border: 1px solid black;
+  padding: 5px 5px;
+  background-color: #f0f0f0;
+  width: 25%;
+  position: absolute;
+  top: 50%;
+  left: 55%;
+  transform: translate(-50%,-55%);
+  text-align: center;
+}
