@@ -1,3 +1,9 @@
+# Leader: 
+    - Roble, Joshua
+# Members:
+    - Dalapag, Marlou
+    - Dalopere, Dan Marlo
+    - Oghayon, Bob
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
