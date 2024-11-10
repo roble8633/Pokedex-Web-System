@@ -1,10 +1,11 @@
 import { SiPokemon } from "react-icons/si";
 import React from 'react'
+import styles from './Header.module.css';
 
 const Header = () => {
   return (
     <header>
-        <SiPokemon size={180}/>    
+        <SiPokemon className={styles.navbar} size={180}/>    
     </header>
   )
 }
