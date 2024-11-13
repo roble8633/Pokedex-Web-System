@@ -1,25 +1,19 @@
 import React from 'react'
-import Header from './Header'
-import Ash from './ash.png'
-import Dialog from './dialog/Dialog'
 import Navbar from './Navbar'
-import View from './View'
+import Ash from './ash.png'
+import { Link } from 'react-router-dom'
+import './Main.css'
 
-
-function Main () {
+const Main = () => {
   return (
-    <div>
-        <main className='head'>
-            <Header />
-            <img src={Ash} alt="Ash" className='responsive-image'/>
-        </main>
-        <Navbar />
-        <Dialog />
-        <View/>
-        
-        
+    <div className="img-bk">
+        <Navbar/> 
+        <h1>Pokedex</h1>
+        <img src={Ash} alt="Ash" className='centered-image' />
+        <Link to="/pokedex" className="link">View Pokedex</Link>
     </div>
-  );
+    
+  )
 }
 
-export default Main;
+export default Main
