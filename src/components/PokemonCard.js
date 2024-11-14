@@ -20,7 +20,7 @@ const PokemonCard = ({ name, url }) => {
         <div className="pokemon-card">
             <img 
                 src={pokemonData.sprites.front_default} 
-                alt={`Image of ${name}`} 
+                alt={`img of ${name}`} 
                 className="pokemon-image" 
             />
             <h2>{name.charAt(0).toUpperCase() + name.slice(1)}</h2>

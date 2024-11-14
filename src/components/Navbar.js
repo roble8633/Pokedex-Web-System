@@ -14,11 +14,11 @@ const Navbar = () => {
                 </li>
                 <li className="navbar-item">
                     <FontAwesomeIcon icon={faUserFriends} />
-                    <Link to="/profile">Personal Trainer</Link>
+                    <Link to="https://www.twitch.tv/pokemontcg">Watch Pokemon Tournament - "Twitch"</Link>
                 </li>
                 <li className="navbar-item">
                     <FontAwesomeIcon icon={faComments} />
-                    <Link to="https://www.pokecommunity.com/">Community</Link>
+                    <Link to="https://community.pokemon.com/en-us/discussions">Discussions</Link>
                 </li>
                 <li className="navbar-item">
                     <FontAwesomeIcon icon={faInfoCircle} />

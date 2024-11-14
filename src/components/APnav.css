@@ -1,0 +1,32 @@
+.app{
+    background-color: wheat;
+    width: 500px;
+    text-align: center;
+    padding: 10px;
+    border-radius: 5px ;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 20px;
+}
+.main-hf{
+    font-size: 48px;
+    color: #801596;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    transform: skewX(-15deg);
+}
+
+
+.developer{
+    background-color: wheat;
+    width: 500px;
+    text-align: center;
+    padding: 10px;
+    border-radius: 5px ;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translate(-50%);
+    font-size: 20px;
+}
