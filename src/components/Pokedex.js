@@ -69,16 +69,16 @@ const Pokedex = () => {
                 value={searchTerm}
                 onChange={(e) => setSearchTerm(e.target.value)}
             />
-            {isLoading && <p>Loading Pokémon...</p>}
+            {isLoading && <p className="para">Loading Pokémon...</p>}
             {error && <p className="error">Error: {error}</p>}
             {filteredPokemonList.length > 0 && (
                 <div className="pokemon-grid">
                     {filteredPokemonList.map((pokemon, index) => (
-                        <PokemonCard key={index} name={pokemon.name} url={pokemon.url} />
+                        <PokemonCard key={index} name={pokemon.name} url={pokemon.url}  />
                     ))}
                 </div>
             )}
-            {filteredPokemonList.length === 0 && !isLoading && <p>Looks like we haven't caught that Pokémon yet!</p>}
+            {filteredPokemonList.length === 0 && !isLoading && <p className="para">Looks like we haven't caught that Pokémon yet!</p> }
 
             <div className="pagination">
                 <button onClick={handlePrevPage} disabled={currentPage === 1}>Previous</button>

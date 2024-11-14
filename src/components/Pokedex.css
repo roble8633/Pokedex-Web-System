@@ -7,9 +7,13 @@ body {
 
 h1 {
     text-align: center;
-    color: #333;
+    color: black;
 }
-
+.para{
+    text-align: center;
+    font-size: 30px;
+   
+}
 .pokemon-grid {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
