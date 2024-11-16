@@ -1,0 +1,516 @@
+.app{
+    background-color: wheat;
+    width: 500px;
+    text-align: center;
+    padding: 10px;
+    border-radius: 5px ;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 20px;
+}
+.main-hf{
+    font-size: 48px;
+    color: #801596;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    transform: skewX(-15deg);
+}
+
+
+.developer{
+    background-color: wheat;
+    width: 500px;
+    text-align: center;
+    padding: 10px;
+    border-radius: 5px ;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translate(-50%);
+    font-size: 20px;
+}
+body {
+    background-image: url(dd.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: repeat;
+    height: 100vh;
+    margin: 0;
+    position: relative; 
+}
+.main-hd{
+    font-size: 48px;
+    color: #801596;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    transform: skewX(-15deg);
+}
+.centered-image {
+    position: absolute;
+    top: 70%;
+    left: 25%;
+    transform: translate(-25%, -70%);
+    width: 80%; 
+    max-width: 300px; 
+    height: auto; 
+    margin-bottom: 20px; 
+}
+
+.link {
+    position: absolute; 
+    bottom: 33%; 
+    left: 58%;  
+    transform: translateX(-58%); 
+    text-decoration: none; 
+    background-color: rgb(43, 20, 126);
+    color: chocolate; 
+    font-size: 30px; 
+    padding: 10px 20px; 
+    margin: 5px;
+    border-radius: 5px; 
+    transition: .6s; 
+    font-weight: bold;
+}
+
+.link:hover {
+    background-color: rgb(196, 206, 64); 
+    color: rgb(43, 20, 126); 
+    transform: translateX(-50%) scale(1.1); 
+}
+.dia{
+    background-color: wheat;
+    width: 350px;
+    text-align: center;
+    padding: 10px;
+    border-radius: 5px ;
+    position: absolute;
+    left: 60%;
+    top: 40%;
+    transform: translate(-60%, -40%);
+    font-size: 20px;
+}
+.navbar {
+    background-color: rgb(43, 20, 126); 
+    padding: 10px; 
+    position: relative;
+    width: 100%;
+    border-radius: 5px ;
+}
+.navbar-toggle {
+    display: none; 
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.navbar-list {
+    list-style-type: none; 
+    display: flex; 
+    justify-content: space-around; 
+    margin: 0; 
+    padding: 0; 
+}
+
+.navbar-list li {
+    color: white; 
+}
+
+.navbar-list a {
+    color: white; 
+    text-decoration: none;  
+    font-weight: bold; 
+    display: inline-block;  
+}
+
+.navbar-list a:hover {
+    opacity: 0.7; 
+    background-color: transparent;
+    color:white ;
+    padding: 5px;
+}
+
+.navbar-list .svg-inline--fa {
+    margin-right: 20px; 
+    font-size: 20px;
+}
+
+
+
+@media (max-width: 768px) {
+    .navbar-list {
+        display: none; 
+        flex-direction: column; 
+        position: absolute;
+        top: 50px; 
+        left: 0;
+        width: 100%; 
+        background-color: #333; 
+    }
+
+    .navbar-list.open {
+        display: flex; 
+    }
+
+    .navbar-toggle {
+        display: block; 
+    }
+}
+body {
+    background-color: #f0f0f0;
+    margin: 1;
+    padding: 20px;
+    
+}
+
+h1 {
+    text-align: center;
+    color: black;
+}
+.para{
+    text-align: center;
+    font-size: 30px;
+   
+}
+.pokemon-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 15px;
+    margin: 20px auto; 
+    max-width: 1200px; 
+    width: 100%; 
+    justify-content: center; 
+}
+
+.pokemon-card {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 10px;
+    text-align: center;
+    transition: transform 0.2s;
+}
+
+.pokemon-card:hover {
+    transform: scale(1.05);
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.pagination button {
+    margin: 0 10px;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.pagination button:disabled {
+    background-color: #ccc;
+}
+
+.pagination button:hover:not(:disabled) {
+    background-color: #0056b3;
+}
+
+.error {
+    color: red;
+    text-align: center;
+}
+
+.search-bar {
+    width: 100%; 
+    max-width: 400px; 
+    padding: 10px; 
+    margin: 0 auto; 
+    display: block; 
+    border: 1px solid #ddd; 
+    border-radius: 5px; 
+    font-size: 20px; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+    transition: border-color 0.3s, box-shadow 0.3s;
+    text-align: center;
+    font-family: Cascade Mono;
+}
+
+.search-bar:focus {
+    border-color: #007bff; 
+    outline: none; 
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); 
+}
+
+.search-bar::placeholder {
+    color: #aaa; 
+    transition: opacity 0.3s; 
+}
+
+.search-bar:focus::placeholder {
+    opacity: 0; 
+}
+
+.search-bar:valid {
+    border-color: #28a745; 
+}
+
+.search-bar:invalid {
+    border-color: #dc3545; 
+}
+
+@media (max-width: 1200px) {
+    .pokemon-grid {
+        grid-template-columns: repeat(5, 1fr); 
+    }
+}
+
+@media (max-width: 992px) {
+    .pokemon-grid {
+        grid-template-columns: repeat(4, 1fr); 
+    }
+}
+.pokemon-detail {
+    max-width: 350px; 
+    margin: 20px auto; 
+    padding: 20px;
+    border: 1px solid #ccc; 
+    border-radius: 10px; 
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); 
+    background: #5A8BCD; 
+    text-align: center; 
+    transition: transform 0.3s, box-shadow 0.3s; 
+}
+
+.pokemon-detail h1 {
+    font-size: 2.5em; 
+    color: rgb(44, 9, 126);
+    margin: 0; 
+    text-transform: capitalize; 
+    letter-spacing: 1px; 
+
+}
+
+.pokemon-detail img {
+    max-width: 300px; 
+    height: auto; 
+    border-radius: 10px;
+    margin-bottom: 20px; 
+    border: 2px solid #ddd; 
+    transition: transform 0.3s; 
+}
+
+
+.pokemon-detail .h2-container {
+    display: flex; 
+    justify-content: center; 
+    flex-wrap: wrap; 
+    margin-top: 20px; 
+}
+
+.pokemon-detail h2 {
+    font-size: 1.8em; 
+    color: rgb(44, 9, 126); 
+    text-transform: uppercase; 
+    letter-spacing: 1px; 
+    margin: 0 10px; 
+}
+
+.pokemon-detail ul {
+    list-style-type: none; 
+    padding: 0; 
+    margin: 0; 
+    display: flex; 
+    justify-content: center; 
+    flex-wrap: wrap; 
+}
+
+.pokemon-detail li {
+    background-color: #e0f7fa; 
+    color: #000000; 
+    padding: 10px 10px; 
+    margin: 10px; 
+    border-radius: 5px; 
+    transition: background-color 0.3s, transform 0.3s; 
+    display: flex; 
+    align-items: center;
+    min-width: 100px;
+    text-align: center;
+    text-transform: uppercase;
+    justify-content: center;
+}
+
+.pokemon-detail li:hover {
+    background-color: #b2ebf2; 
+    transform: translateY(-2px);
+}
+.back{ 
+    text-decoration: none; 
+    background-color: rgb(43, 20, 126);
+    color: chocolate; 
+    padding: 5px 10px;
+    font-size: 20px; 
+    border-radius: 5px; 
+    font-weight: bold;  
+    justify-content: center;
+}
+.back:hover {
+    background-color: rgb(196, 206, 64); 
+    color: rgb(43, 20, 126); 
+     
+}
+
+
+@media (max-width: 768px) {
+    .pokemon-detail {
+        padding: 15px;
+    }
+
+    .pokemon-detail h1 {
+        font-size: 2.2em; 
+    }
+
+    .pokemon-detail h2 {
+        font-size: 1.6em; 
+    }
+
+    .pokemon-detail img {
+        max-width: 250px;
+    }
+}
+
+
+.footer {
+    background-color: #282c34; /* Dark background for the footer */
+    color: white; /* White text color */
+    text-align: center; /* Center the text */
+    position: absolute; /* Position relative to the parent */
+    width: 100%; /* Full width */
+    top: 100%;
+    margin: -20px;
+}
+
+.footer-container {
+    display: flex; /* Use flexbox for layout */
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center items */
+    margin-bottom: 10px; /* Space below the sections */
+    
+}
+
+.footer-compressed {
+    display: flex; /* Use flexbox for the compressed section */
+    justify-content: space-around; /* Space out sections evenly */
+    width: 100%; /* Full width for the compressed section */
+    max-width: 800px; /* Optional: limit the max width */
+    margin: 10px 0; /* Space above and below the compressed section */
+}
+
+.footer-headings-row {
+    display: flex; /* Use flexbox to align headings in a row */
+    justify-content: center; /* Center the headings */
+    margin: 20px 0; /* Space above and below the headings */
+}
+
+.footer-title {
+    position: absolute;
+    left: 20px;
+    font-size: 50px;
+    font-weight: bold;
+    background: linear-gradient(to left, white, rgb(7, 134, 207));
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    
+}
+
+.footer-section {
+    flex: 1; /* Allow sections to grow */
+    min-width: 100px; /* Minimum width for responsiveness */   
+}
+
+.footer-heading {
+    font-size: 1.5rem; /* Font size for headings */
+    margin-bottom: 10px; /* Space below headings */
+    margin-left: 70%;
+    background: linear-gradient(to left, white, rgb(7, 134, 207));
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.footer-links {
+    list-style: none; /* Remove bullet points */
+    padding: 0; /* Remove padding */
+    margin-left: 70%;
+}
+
+.footer-links li {
+    margin: 5px 0; /* Space between links */
+}
+
+.footer-links a {
+    color: white; /* Link color */
+    text-decoration: none; /* Remove underline */
+    transition: color 0.3s; /* Smooth transition for hover effect */
+}
+
+.footer-links a:hover {
+    color: #61dafb; /* Change color on hover */
+    text-decoration: underline; /* Underline on hover */
+}
+
+.footer-description {
+    margin: 20px 0; /* Space above and below the description */
+    font-size: 1rem; /* Font size for description */
+}
+
+.footer-about {
+    font-size: 1rem;
+    text-align: justify;
+    margin-left: 50%;
+    width: 300px;
+}
+
+.footer-copy {
+    margin-top: 20px; 
+    font-size: 0.9rem; 
+}
+
+.footer-links .fa, a {
+    display: flex; 
+    align-items: center; 
+    text-decoration: none; 
+    color: white; 
+}
+
+.footer-links a:hover .fa {
+    color: #61dafb; /* Change icon color on hover */
+}
+
+.footer-links a:hover {
+    color: #61dafb; /* Change link color on hover */
+}
+.bb{
+    text-decoration: none; 
+    background-color: rgb(43, 20, 126);
+    color: chocolate; 
+    padding: 5px 10px;
+    font-size: 20px; 
+    border-radius: 5px; 
+    font-weight: bold;
+    width: 100px; 
+    justify-content: center; 
+}
+.bb:hover {
+    background-color: rgb(196, 206, 64); 
+    color: rgb(43, 20, 126); 
+     
+}
+.ohaha{
+    background: linear-gradient(to left, rgb(32, 32, 32) , rgb(43, 20, 126));
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}

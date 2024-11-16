@@ -2,7 +2,8 @@ import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import PokemonCard from './PokemonCard'; 
 import Navbar from './Navbar'; 
-import './Pokedex.css';
+import './whole.css';
+import { Link } from 'react-router-dom'
 
 const Pokedex = () => {
     const [pokemonList, setPokemonList] = useState([]);
@@ -61,7 +62,7 @@ const Pokedex = () => {
     return (
         <div>
             <Navbar />
-            <h1>Welcome to Pokedex</h1>
+            <h1 className="ohaha">Welcome to Pokédex</h1>
             <input
                 type="text"
                 className="search-bar" 
@@ -85,7 +86,9 @@ const Pokedex = () => {
                 <span>Page {currentPage} of {pageCount}</span>
                 <button onClick={handleNextPage} disabled={currentPage === pageCount}>Next</button>
             </div>
+            <Link to="/" className="bb">Back</Link>
         </div>
+        
     );
 };
 

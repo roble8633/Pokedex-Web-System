@@ -1,7 +1,7 @@
 import React from 'react';
 import { useQuery } from 'react-query';
 import { useNavigate } from 'react-router-dom';
-import './Pokedex.css'; 
+import './whole.css'; 
 
 const fetchPokemonData = async (url) => {
     const response = await fetch(url);

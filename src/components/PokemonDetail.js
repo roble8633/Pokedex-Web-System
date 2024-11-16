@@ -1,7 +1,7 @@
 import React from 'react';
 import { useQuery } from 'react-query';
 import { useParams } from 'react-router-dom';
-import './PokemonDetails.css'
+import './whole.css'
 import {Link} from 'react-router-dom'
 
 
@@ -21,6 +21,7 @@ const PokemonDetail = () => {
     if (error) return <div className="error">Error: {error.message}</div>;
 
     return (
+        
         <div className="pokemon-detail">
             <h1>{pokemonData.name.charAt(0).toUpperCase() + pokemonData.name.slice(1)}</h1>
             <img 
@@ -47,7 +48,7 @@ const PokemonDetail = () => {
                     </li>
                 ))}
             </ul>
-            <Link to="/pokedex" className="back">Back to Pokedex</Link>
+            <Link to="/pokedex" className="back">Back to Pokédex</Link>
         </div>
     );
 };
