@@ -40,10 +40,9 @@ body {
     position: relative; 
 }
 .main-hd{
-    font-size: 48px;
-    color: #801596;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-    transform: skewX(-15deg);
+    font-size: 50px;
+    color: #7b178f;
+    text-shadow: 2px 2px 4px rgba(219, 205, 9, 0.8);
 }
 .centered-image {
     position: absolute;
@@ -126,7 +125,6 @@ body {
     opacity: 0.7; 
     background-color: transparent;
     color:white ;
-    padding: 5px;
 }
 
 .navbar-list .svg-inline--fa {
@@ -423,7 +421,7 @@ h1 {
     font-weight: bold;
     background: linear-gradient(to left, white, rgb(7, 134, 207));
     background-clip: text;
-    -webkit-text-fill-color: transparent;   
+    -webkit-text-fill-color: transparent; 
 }
 
 .footer-section {
